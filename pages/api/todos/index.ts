@@ -4,8 +4,7 @@ import { ResponseMethods } from "../../../utils/types";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const method: keyof ResponseMethods = req.method as keyof ResponseMethods;
-
-  const catcher = (error: Error) => res.status(400).json({ error });
+  const catcher = (error: Error) => res.status(500).json({ error });
 
   const handleCase: ResponseMethods = {
     GET: async (_, res: NextApiResponse) => {
