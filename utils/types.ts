@@ -1,8 +1,10 @@
+import { NextApiRequest, NextApiResponse } from "next";
+
 export interface ResponseMethods {
-  GET?: () => void;
-  POST?: () => void;
-  PUT?: () => void;
-  DELETE?: () => void;
+  GET?: (req: NextApiRequest, res: NextApiResponse) => void;
+  POST?: (req: NextApiRequest, res: NextApiResponse) => void;
+  PUT?: (req: NextApiRequest, res: NextApiResponse) => void;
+  DELETE?: (req: NextApiRequest, res: NextApiResponse) => void;
 }
 
 export interface Todo {
