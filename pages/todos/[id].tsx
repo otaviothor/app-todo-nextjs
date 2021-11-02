@@ -58,7 +58,7 @@ const Show = (props: Props) => {
 export const getServerSideProps = async (context: any) => {
   const url = process.env.API_URL;
   const res = await fetch(`${url}/${context.query.id}`);
-  const todo = res.json();
+  const todo = await res.json();
 
   return {
     props: {

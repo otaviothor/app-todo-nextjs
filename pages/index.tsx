@@ -12,6 +12,9 @@ const Home = (props: IHomeProps) => {
     <div>
       <h1>My todo list</h1>
       <h2>Click on todo to see it individually</h2>
+      <Link href="/todos/create" passHref>
+        <button>Create a New Todo</button>
+      </Link>
       {todos.map((todo) => (
         <div key={todo?._id}>
           <Link href={`/todos/${todo?._id}`} passHref>
