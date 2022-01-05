@@ -1,4 +1,4 @@
-<p align="center"><a href="https://nextjs.org/" target="_blank"><img style="background: #fff; padding: 12px 24px;" src="./.github/next-logo.svg" width="400"></a></p>
+<p align="center"><img style="background: #fff; padding: 12px 24px;" src="./.github/next-logo.svg" width="400"></p>
 
 ## ✨ Tecnologias
 
